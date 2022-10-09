@@ -25,7 +25,7 @@ printDirectory()
   echo -e "$dirDashes${CYAN}$item${NC}"
   echo -e "$dirPrefix"
   prepend="   ${CYAN}|${NC}"
-  pushd $item > /dev/null
+  pushd "$item" > /dev/null
   listStructure
   popd > /dev/null
 }
